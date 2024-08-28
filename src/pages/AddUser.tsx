@@ -1,6 +1,6 @@
-import Header from '../compoments/Header'
-import Sidebar from '../compoments/Sidebar'
-import UserAddForm from '../compoments/user/UserAddForm'
+import Header from '../components/Header'
+import Sidebar from '../components/Sidebar'
+import UserAddForm from '../components/user/UserAddForm'
 
 const AddUser = () => {
   return (

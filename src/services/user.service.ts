@@ -2,7 +2,7 @@
 import { createApi } from '@reduxjs/toolkit/query/react'
 import { baseQueryWithReauth } from './base.service'
 import { User } from '../types/user'
-import { UserAddFormValues } from '../compoments/user/UserAddForm.types'
+import { UserAddFormValues } from '../components/user/UserAddForm.types'
 
 const prefix = 'users'
 
