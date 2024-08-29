@@ -8,6 +8,7 @@ import User from './pages/User'
 import AddUser from './pages/AddUser'
 import Products from './pages/Products'
 import RegisterUserPage from './pages/RegisterUserPage'
+import ExperiencePage from './pages/ExperiencePage'
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
           <Route path="/add-user" element={<AddUser />} />
           <Route path="/products" element={<Products />} />
           <Route path="/register" element={<RegisterUserPage />} />
+          <Route path="/experience" element={<ExperiencePage />} />
         </Routes>
       </HistoryRouter>
     </ReduxStoreProvider>
