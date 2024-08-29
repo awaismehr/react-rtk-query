@@ -40,19 +40,27 @@ const FormContext = () => {
         {/* Sidebar */}
         <Sidebar />
         <main className="p-4 md:ml-64 h-auto pt-20">
-          <FormProvider {...methods}>
-            <div className="grid gap-6 mb-6 md:grid-cols-3">
-              <FirstCard />
-              <SecondCard />
-              <ThirdCard />
+          <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <div className="flex justify-between">
+              <h2 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl dark:text-white">
+                Form Context
+              </h2>
             </div>
-            <button
-              onClick={methods.handleSubmit(onSubmit)}
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
-              Submit
-            </button>
-          </FormProvider>
+
+            <FormProvider {...methods}>
+              <div className="grid gap-6 mb-6 md:grid-cols-2">
+                <FirstCard />
+                <SecondCard />
+                <ThirdCard />
+              </div>
+              <button
+                onClick={methods.handleSubmit(onSubmit)}
+                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Submit
+              </button>
+            </FormProvider>
+          </div>
         </main>
       </div>
     </>

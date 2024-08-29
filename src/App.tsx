@@ -7,9 +7,9 @@ import { history, store } from './store'
 import User from './pages/User'
 import AddUser from './pages/AddUser'
 import Products from './pages/Products'
-import RegisterUserPage from './pages/RegisterUserPage'
-import ExperiencePage from './pages/ExperiencePage'
-import FormContext from './pages/FormContext'
+import RegisterUserPage from './pages/RegisterPage'
+import ExperiencePage from './pages/FieldArrayPage'
+import FormContext from './pages/FormContextPage'
 
 const App: React.FC = () => {
   return (
@@ -20,7 +20,7 @@ const App: React.FC = () => {
           <Route path="/add-user" element={<AddUser />} />
           <Route path="/products" element={<Products />} />
           <Route path="/register" element={<RegisterUserPage />} />
-          <Route path="/experience" element={<ExperiencePage />} />
+          <Route path="/field-array" element={<ExperiencePage />} />
           <Route path="/form-context" element={<FormContext />} />
         </Routes>
       </HistoryRouter>
