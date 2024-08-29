@@ -9,6 +9,7 @@ import AddUser from './pages/AddUser'
 import Products from './pages/Products'
 import RegisterUserPage from './pages/RegisterUserPage'
 import ExperiencePage from './pages/ExperiencePage'
+import FormContext from './pages/FormContext'
 
 const App: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const App: React.FC = () => {
           <Route path="/products" element={<Products />} />
           <Route path="/register" element={<RegisterUserPage />} />
           <Route path="/experience" element={<ExperiencePage />} />
+          <Route path="/form-context" element={<FormContext />} />
         </Routes>
       </HistoryRouter>
     </ReduxStoreProvider>
