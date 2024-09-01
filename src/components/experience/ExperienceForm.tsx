@@ -8,6 +8,8 @@ const ExperienceForm = () => {
     control,
     handleSubmit,
     formState: { errors },
+    setValue,
+    clearErrors,
   } = useForm({
     resolver: yupResolver<ExperienceFormValues>(experienceFormSchema),
     defaultValues: {
@@ -22,7 +24,10 @@ const ExperienceForm = () => {
     },
   })
 
-  const { fields, append } = useFieldArray({
+  setValue('current_designation', 'dsds')
+  clearErrors('current_designation')
+
+  const { fields, append, remove } = useFieldArray({
     control,
     name: 'previous_experience',
   })

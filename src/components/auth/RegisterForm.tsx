@@ -10,7 +10,9 @@ const RegisterForm = () => {
     formState: { errors },
   } = useForm({
     resolver: yupResolver<RegisterFormValues>(registerFormSchema),
-    defaultValues: {},
+    defaultValues: {
+      first_name: '',
+    },
   })
 
   const onSubmit = async (formValues: RegisterFormValues) => {

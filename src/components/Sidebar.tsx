@@ -72,6 +72,33 @@ const Sidebar = () => {
               <span className="ml-3">Products</span>
             </Link>
           </li>
+
+          <li>
+            <Link
+              to="/register"
+              className="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+            >
+              <span className="ml-3">Register</span>
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              to="/field-array"
+              className="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+            >
+              <span className="ml-3">Field Array</span>
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              to="/form-context"
+              className="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+            >
+              <span className="ml-3">Form Context</span>
+            </Link>
+          </li>
         </ul>
       </div>
     </aside>
